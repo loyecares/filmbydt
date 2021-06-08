@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FilmByDT</title>
+	<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-bg">
+    <!-- Loader 1 -->
+  <div class="loader">
+    <div class="loader-container animate__animated animate__pulse animate__repeat-3 animate__delay-1s ">
+		<img src="assets/images/logo.png" alt="technical magic logo"> 
+			<span style="    vertical-align: middle;">Film By DT</span>
+		</div>
+  </div>
+    <!-- Loader 1 -->
+    
+     <!-- Video Source -->
+  <div class="hidden-lg">
+    <div class="mobile-nav closed" id="mobile-nav">
+      <a href="#" class="new-logo">
+        <img src="assets/images/logo.png" alt=""> <span>FilmByDt</span> 
+        <a>
+      <a href="index.html" class="home nav-text"> Home </a>
+      <a href="#about" class="nav-text"> About Us</a>
+      <a href="#work" class="nav-text"> Our Work </a>
+      <a href="#contact" class="nav-text"> Contact Us </a>
+      <a href="javascript:void(0)" onclick="toggle()" class="toggle"  id="togg"><i></i></a>
+      </div>
+  </div>
+
+  <section class="showcase">
+    <video src="https://res.cloudinary.com/loye/video/upload/v1617793531/production_ID_4612064_pso1ca.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="header-text animate__animated animate__fadeIn animate__delay-3s animate__slow">
+      <h1> light, camera, filmbydt </h1>
+      <p>We create  contents that captivates  audiences, inspires action and drives results. </p>
+      <div class="header-button">
+        <a href="#" class="test">Explore</a> 
+        <a href="#" class="button-hire">Hire Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="about-container customise-container" style="padding-right: 0px;">
+    <div class="about-content-wrap">
+      <div class="about-left-content">
+         <h3> About FilmByDt</h3>
+         <h2> We are a Creative video <br> production company</h2>
+         <p> Video production work with producing video content. It is the analogical of film making, but the images are digitally recorded instead of film stock. There are three levels of video production: production, pre-production and post-production the images are digitally recorded instead of film stock producing video content. It is the </p>
+      </div>
+      <div class="about-right-content">
+         <h3>  </h3>
+      </div>
+     
+      
+    </div>
+  </section>
+
+  <!-- services section -->
+  <section id="service" class="service-container customise-container" style="padding-top: 0px;">
+    <div class="service-content-wrapper">
+      <div class="service-content-left">
+        <h3 class="section-heading"> Services</h3>
+        <h2 class="section-sub-heading"> videos solution that inspires action and drive results</h2>
+        <p class="section-sentence"></p>
+      </div>
+      <div class="service-content-right">
+        <div class="service-content-left-inner-layout">
+          <p> corporate event </p>
+          <p> commercial </p>
+          <p>  Advertisement</p>
+        </div>
+        <div class="service-content-right-inner-layout">
+           <p> Documentary </p>
+           <p> coporate profile </p>
+           <p> Event </p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+ 
+  <!--featured video --->
+  <section class="feature-video" id="work">
+   <video  height="740" width="100%"  src="https://res.cloudinary.com/loye/video/upload/v1617793531/production_ID_4612064_pso1ca.mp4
+   " muted   style="object-fit: cover" id="video1"></video>
+   <a id="play-video" class="video-play-button"  onclick="playPause()">
+    <span></span>
+   </a>
+   <h4 class="dt-text"> Video By DT <br> For FilmByDT</h4>
+  </section>
+ <!-- work process section -->
+  <section class="customise-container">
+    <div class="pre-heading">
+      <h3 class="section-heading"> Work Process</h3>
+      <h2 class="section-sub-heading"> Ideas. innovate. Execute.</h2>
+      <p class="section-sentence"></p>
+    </div>
+    <div class="work-process-container">
+      <div class="work-process-wrapper">
+
+        <div class="production"> 
+          <h2> 1</h2>
+          <p> Pre-production</p>
+        </div>
+        <div class="production"> 
+           <h2> 2</h2>
+          <p> roduction</p>
+        </div>
+        <div class="production">
+         <h2> 3</h2>
+          <p> post-production</p> 
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!--porfolio section -->
+  <section class="customise-container porfolio" style="padding-top: 0px;">
+     <div class="pre-heading">
+      <h3 class="section-heading"> Portfolio</h3>
+      <h2 class="section-sub-heading"> Range of Recent Works</h2>
+      <p class="section-sentence"></p>
+    </div>
+    <br></br>
+    <!-- Header -->
+<!--<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>-->
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <div class="testing">
+    <img src=" assets/images/pt1.jpg" style="width:100%" class="work1">
+    <div class="overlay1">
+      <div class="video-details">
+        <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+      </div>
+      
+     
+  </div>
+  </div>
+  
+  <div class="testing">
+    <img src="assets/images/pt3.jpg" style="width:100%" class="work3">
+    <div class="overlay3">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+      <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+    </div>
+    </div>
+  </div>
+  <div class="testing">
+    <img src="assets/images/pt4.jpg" style="width:100%"class="work4">
+    <div class="overlay4">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+        </div>
+    </div>
+    </div>
+    <div class="testing">
+      <img src="assets/images/pt3.jpg" style="width:100%" class="work8">
+      <div class="overlay8">
+        <div class="video-details">
+        <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+      </div>
+      </div>
+      </div>
+    
+  </div>
+
+  <div class="column">
+    <div class="testing">
+    <img src="assets/images/pt6.jpg" style="width:100%" class="work5">
+    <div class="overlay5">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+      </div>
+    </div>
+  </div>
+  <div class="testing">
+    <img src="assets/images/pt5.jpg" style="width:100%" class="work6">
+    <div class="overlay6">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+      </div>
+      </div>
+    </div>
+    <div class="testing">
+    <img src="assets/images/pt1.jpg" style="width:100%" class="work7">
+    <div class="overlay7">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link">Explore</a></div> 
+      </div>
+    </div>
+    </div>
+  </div>  
+  <div class="column">
+    <div class="testing">
+    <img src="assets/images/pt3.jpg" style="width:100%" class="work8">
+    <div class="overlay8">
+      <div class="text">Hello World ............</div>
+    </div>
+    </div>
+    <div class="testing">
+    <img src="assets/images/pt5.jpg" style="width:100%" class="work9">
+    <div class="overlay9">
+      <div class="text">Hello World ............</div>
+    </div>
+    </div>
+    <div class="testing">
+    <img src="assets/images/pt6.jpg" style="width:100%" class="work10">
+    <div class="overlay9">
+      <div class="text">Hello World ............</div>
+    </div>
+    </div>
+    
+  
+  </div>
+  <div class="column">
+    <img src="assets/images/pt4.jpg" style="width:100%" class="work11">
+    <img src="assets/images/pt6.jpg" style="width:100%" class="work13">
+    <img src="assets/images/pt3.jpg" style="width:100%" class="work14">
+  </div>
+</div>
+
+ <!--<div class="column-1">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/436357978" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/436360032" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="column-1">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/396408345" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/519490595" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="column-1">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/526492830" width="100%" height="338" frameborder="0" allowfullscreen></iframe>
+   
+  </div>
+  <div class="column-1">
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/526492830" width="100%" height="338" frameborder="0" allowfullscreen></iframe>
+   
+  </div>-->
+  
+</div> 
+</div>
+
+    
+  </section>
+
+<!-- client section -->
+<section class="customise-container" class=" client" style="padding-top: 0px">
+  <div class="client-header" >
+    <div class="client-header-left">
+      <h2>Our  Clients</h2>
+    </div>
+    <div class="client-header-right">
+      <h5>- We worked with</h5>
+      <p> 
+
+Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
+    </div>
+  </div>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+</section>
+
+<!--contact--->
+
+     <section class="fluid-container" id="contact">
+         <div class="customise-container" style="padding-top: 0px;">
+             <div class="row ">
+               <div class=" contact-container">
+               <div class="text-center mt-3"> <h6>Get In Touch</h6></div>
+                
+                <div class="row">
+                    <div class="col-md-6 contact-input">
+                        <p class="mt-5 mb-4 white">Leave us a message</p>
+                     <input  type="text" placeholder="Name"/> <br>
+                     <input  type="text" placeholder="Email Address"/><br>
+                     <textarea placeholder="Your Message"></textarea>
+                      <button> Send</button>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="contact-address">
+                            <p><span class="mr-3"><svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 4.25C6.45833 4.25 5.57292 4.61458 4.84375 5.34375C4.11458 6.07292 3.75 6.95833 3.75 8C3.75 9.04167 4.11458 9.92708 4.84375 10.6562C5.57292 11.3854 6.45833 11.75 7.5 11.75C8.54167 11.75 9.42708 11.3854 10.1562 10.6562C10.8854 9.92708 11.25 9.04167 11.25 8C11.25 6.95833 10.8854 6.07292 10.1562 5.34375C9.42708 4.61458 8.54167 4.25 7.5 4.25ZM7.5 10.5C6.82292 10.5 6.23698 10.2526 5.74219 9.75781C5.2474 9.26302 5 8.67708 5 8C5 7.32292 5.2474 6.73698 5.74219 6.24219C6.23698 5.7474 6.82292 5.5 7.5 5.5C8.17708 5.5 8.76302 5.7474 9.25781 6.24219C9.7526 6.73698 10 7.32292 10 8C10 8.67708 9.7526 9.26302 9.25781 9.75781C8.76302 10.2526 8.17708 10.5 7.5 10.5ZM7.5 0.5C6.14583 0.5 4.89583 0.838542 3.75 1.51562C2.60417 2.19271 1.69271 3.10417 1.01562 4.25C0.338542 5.39583 0 6.64583 0 8C0 8.83333 0.104167 9.57552 0.3125 10.2266C0.520833 10.8516 0.924479 11.6328 1.52344 12.5703C1.9401 13.2214 2.79948 14.4844 4.10156 16.3594L6.71875 20.1094C6.90104 20.3698 7.16146 20.5 7.5 20.5C7.83854 20.5 8.09896 20.3698 8.28125 20.1094L10.8984 16.3594C12.2005 14.4844 13.0599 13.2214 13.4766 12.5703C14.0755 11.6328 14.4792 10.8516 14.6875 10.2266C14.8958 9.57552 15 8.83333 15 8C15 6.64583 14.6615 5.39583 13.9844 4.25C13.3073 3.10417 12.3958 2.19271 11.25 1.51562C10.1042 0.838542 8.85417 0.5 7.5 0.5ZM7.5 19.0156C6.875 18.1042 6.06771 16.9453 5.07812 15.5391C3.82812 13.7422 3.00781 12.5573 2.61719 11.9844C2.07031 11.099 1.70573 10.3958 1.52344 9.875C1.34115 9.32812 1.25 8.70312 1.25 8C1.25 7.16667 1.40625 6.3724 1.71875 5.61719C2.03125 4.86198 2.48698 4.1849 3.08594 3.58594C3.6849 2.98698 4.36198 2.53125 5.11719 2.21875C5.8724 1.90625 6.66667 1.75 7.5 1.75C8.33333 1.75 9.1276 1.90625 9.88281 2.21875C10.638 2.53125 11.3151 2.98698 11.9141 3.58594C12.513 4.1849 12.9688 4.86198 13.2812 5.61719C13.5938 6.3724 13.75 7.16667 13.75 8C13.75 8.70312 13.6589 9.32812 13.4766 9.875C13.2943 10.3958 12.9297 11.099 12.3828 11.9844C11.9922 12.5573 11.1719 13.7422 9.92188 15.5391L7.5 19.0156Z" fill="white"/>
+                                </svg></span> 
+                                Lagos, Nigeria.</p>
+                            <p><span class="mr-3"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5625 20.0625L20.4609 16.1172C20.5391 15.8307 20.5 15.5573 20.3438 15.2969C20.2135 15.0365 20.0182 14.8411 19.7578 14.7109L15.5391 12.9141C15.2786 12.8099 15.0182 12.7839 14.7578 12.8359C14.4974 12.9141 14.276 13.0573 14.0938 13.2656L12.375 15.375C11.0208 14.6979 9.8099 13.8255 8.74219 12.7578C7.67448 11.6901 6.80208 10.4792 6.125 9.125L8.23438 7.40625C8.44271 7.22396 8.57292 7.0026 8.625 6.74219C8.70312 6.48177 8.6901 6.22135 8.58594 5.96094L6.78906 1.74219C6.65885 1.48177 6.46354 1.27344 6.20312 1.11719C5.94271 0.986979 5.66927 0.960937 5.38281 1.03906L1.4375 1.9375C1.17708 2.01562 0.955729 2.15885 0.773438 2.36719C0.591146 2.60156 0.5 2.86198 0.5 3.14844C0.5 6.3776 1.30729 9.3724 2.92188 12.1328C4.51042 14.8411 6.64583 16.9766 9.32812 18.5391C12.1146 20.1797 15.1354 21 18.3906 21C18.651 21 18.8854 20.9089 19.0938 20.7266C19.3281 20.5443 19.4844 20.3229 19.5625 20.0625ZM1.75 3.14844L5.65625 2.25L7.45312 6.46875L4.60156 8.77344C5.53906 10.8047 6.61979 12.4323 7.84375 13.6562C9.06771 14.8802 10.6953 15.9609 12.7266 16.8984L15.0312 14.0469L19.25 15.8438L18.3516 19.75C15.3568 19.75 12.5703 18.9948 9.99219 17.4844C7.46615 16 5.47396 14.0078 4.01562 11.5078C2.50521 8.92969 1.75 6.14323 1.75 3.14844Z" fill="white"/>
+                                </svg></span> 
+                                +234 081-1236-4568</p>
+                            <p><span class="mr-3"><svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.125 0L1.875 0C1.35417 0 0.911458 0.182292 0.546875 0.546875C0.182292 0.911458 0 1.35417 0 1.875L0 13.125C0 13.6458 0.182292 14.0885 0.546875 14.4531C0.911458 14.8177 1.35417 15 1.875 15H18.125C18.6458 15 19.0885 14.8177 19.4531 14.4531C19.8177 14.0885 20 13.6458 20 13.125V1.875C20 1.35417 19.8177 0.911458 19.4531 0.546875C19.0885 0.182292 18.6458 0 18.125 0ZM1.875 1.25L18.125 1.25C18.3073 1.25 18.4505 1.3151 18.5547 1.44531C18.6849 1.54948 18.75 1.69271 18.75 1.875V3.47656C17.8385 4.25781 15.8724 5.84635 12.8516 8.24219L12.4609 8.55469C11.9401 8.9974 11.5365 9.3099 11.25 9.49219C10.7552 9.83073 10.3385 10 10 10C9.66146 10 9.24479 9.83073 8.75 9.49219C8.4375 9.3099 8.02083 8.9974 7.5 8.55469L7.14844 8.24219C4.1276 5.84635 2.16146 4.25781 1.25 3.47656V1.875C1.25 1.69271 1.30208 1.54948 1.40625 1.44531C1.53646 1.3151 1.69271 1.25 1.875 1.25ZM18.125 13.75H1.875C1.69271 13.75 1.53646 13.6979 1.40625 13.5938C1.30208 13.4635 1.25 13.3073 1.25 13.125L1.25 5.11719C2.16146 5.84635 3.86719 7.21354 6.36719 9.21875L6.75781 9.53125C7.35677 10.0521 7.85156 10.4297 8.24219 10.6641C8.89323 11.0547 9.47917 11.25 10 11.25C10.5208 11.25 11.1068 11.0547 11.7578 10.6641C12.1224 10.4297 12.6172 10.0521 13.2422 9.53125L13.6328 9.21875C16.1328 7.21354 17.8385 5.84635 18.75 5.11719V13.125C18.75 13.3073 18.6849 13.4635 18.5547 13.5938C18.4505 13.6979 18.3073 13.75 18.125 13.75Z" fill="white"/>
+                                </svg>
+                            </span> hello@filmbydt.com</p>
+                            <div>
+                                <a href="#" class="mr-4"><svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7957 2.49845C21.5397 1.51497 20.7853 0.740516 19.8275 0.477677C18.0916 0 11.1304 0 11.1304 0C11.1304 0 4.16923 0 2.43327 0.477677C1.47542 0.740516 0.721075 1.51497 0.465075 2.49845C0 4.2809 0 8 0 8C0 8 0 11.719 0.465075 13.5015C0.721075 14.485 1.47542 15.2595 2.43327 15.5225C4.16923 16 11.1304 16 11.1304 16C11.1304 16 18.0916 16 19.8275 15.5225C20.7853 15.2595 21.5397 14.485 21.7957 13.5015C22.2609 11.719 22.2609 8 22.2609 8C22.2609 8 22.2609 4.2809 21.7957 2.49845Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0437 11.8262V4.86963L14.6089 8.34802L9.0437 11.8262Z" fill="#533E2D"/>
+                                    </svg></a>
+                                <a href="#" class="mr-4"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00067 0C5.828 0 5.55533 0.0095 4.702 0.0483333C3.85033 0.0873333 3.269 0.222167 2.76033 0.42C2.23417 0.624333 1.78783 0.897667 1.34317 1.3425C0.898167 1.78717 0.624833 2.2335 0.419833 2.7595C0.2215 3.26833 0.0865 3.84983 0.0481667 4.70117C0.01 5.5545 0 5.82733 0 8C0 10.1727 0.00966667 10.4445 0.0483333 11.2978C0.0875 12.1495 0.222333 12.7308 0.42 13.2395C0.6245 13.7657 0.897833 14.212 1.34267 14.6567C1.78717 15.1017 2.2335 15.3757 2.75933 15.58C3.26833 15.7778 3.84983 15.9127 4.70133 15.9517C5.55467 15.9905 5.82717 16 7.99967 16C10.1725 16 10.4443 15.9905 11.2977 15.9517C12.1493 15.9127 12.7313 15.7778 13.2403 15.58C13.7663 15.3757 14.212 15.1017 14.6565 14.6567C15.1015 14.212 15.3748 13.7657 15.5798 13.2397C15.7765 12.7308 15.9115 12.1493 15.9515 11.298C15.9898 10.4447 15.9998 10.1727 15.9998 8C15.9998 5.82733 15.9898 5.55467 15.9515 4.70133C15.9115 3.84967 15.7765 3.26833 15.5798 2.75967C15.3748 2.2335 15.1015 1.78717 14.6565 1.3425C14.2115 0.8975 13.7665 0.624167 13.2398 0.42C12.7298 0.222167 12.1482 0.0873333 11.2965 0.0483333C10.4432 0.0095 10.1715 0 7.99817 0H8.00067ZM7.28317 1.44145C7.49617 1.44112 7.73384 1.44145 8.00084 1.44145C10.1368 1.44145 10.39 1.44912 11.2335 1.48745C12.0135 1.52312 12.4368 1.65345 12.7188 1.76295C13.0922 1.90795 13.3583 2.08129 13.6382 2.36129C13.9182 2.64129 14.0915 2.90795 14.2368 3.28129C14.3463 3.56295 14.4768 3.98629 14.5123 4.76629C14.5507 5.60962 14.559 5.86295 14.559 7.99795C14.559 10.133 14.5507 10.3863 14.5123 11.2296C14.4767 12.0096 14.3463 12.433 14.2368 12.7146C14.0918 13.088 13.9182 13.3538 13.6382 13.6336C13.3582 13.9136 13.0923 14.087 12.7188 14.232C12.4372 14.342 12.0135 14.472 11.2335 14.5076C10.3902 14.546 10.1368 14.5543 8.00084 14.5543C5.86467 14.5543 5.6115 14.546 4.76817 14.5076C3.98817 14.4716 3.56484 14.3413 3.28267 14.2318C2.90934 14.0868 2.64267 13.9135 2.36267 13.6335C2.08267 13.3535 1.90934 13.0875 1.764 12.714C1.6545 12.4323 1.524 12.009 1.4885 11.229C1.45017 10.3856 1.4425 10.1323 1.4425 7.99595C1.4425 5.85962 1.45017 5.60762 1.4885 4.76429C1.52417 3.98429 1.6545 3.56095 1.764 3.27895C1.909 2.90562 2.08267 2.63895 2.36267 2.35895C2.64267 2.07895 2.90934 1.90562 3.28267 1.76029C3.56467 1.65029 3.98817 1.52029 4.76817 1.48445C5.50617 1.45112 5.79217 1.44112 7.28317 1.43945V1.44145ZM12.2713 2.76986C11.7413 2.76986 11.3113 3.19936 11.3113 3.72953C11.3113 4.25953 11.7413 4.68953 12.2713 4.68953C12.8013 4.68953 13.2313 4.25953 13.2313 3.72953C13.2313 3.19953 12.8013 2.76953 12.2713 2.76953V2.76986ZM8.00079 3.8916C5.73196 3.8916 3.89246 5.7311 3.89246 7.99994C3.89246 10.2688 5.73196 12.1074 8.00079 12.1074C10.2696 12.1074 12.1085 10.2688 12.1085 7.99994C12.1085 5.7311 10.2695 3.8916 8.00062 3.8916H8.00079ZM8.00065 5.33301C9.47332 5.33301 10.6673 6.52684 10.6673 7.99967C10.6673 9.47234 9.47332 10.6663 8.00065 10.6663C6.52782 10.6663 5.33398 9.47234 5.33398 7.99967C5.33398 6.52684 6.52782 5.33301 8.00065 5.33301Z" fill="white" style="border-radius: 4px;"/>
+                                    </svg></a>
+                                <a href="#" class="mr-4"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.93445 4.25625L9.97642 4.9483L9.27694 4.86356C6.73083 4.53872 4.50649 3.4371 2.6179 1.58693L1.69458 0.668915L1.45676 1.34684C0.953135 2.85804 1.2749 4.45398 2.32411 5.52735C2.8837 6.12054 2.75779 6.20528 1.79251 5.85219C1.45676 5.7392 1.16298 5.65446 1.135 5.69683C1.03707 5.7957 1.37282 7.08092 1.63862 7.58937C2.00235 8.29553 2.7438 8.98758 3.5552 9.39716L4.24069 9.72199L3.42929 9.73612C2.64587 9.73612 2.6179 9.75024 2.70183 10.0468C2.98163 10.9649 4.0868 11.9394 5.31789 12.3631L6.18524 12.6597L5.4298 13.1116C4.31064 13.7613 2.99561 14.1285 1.68059 14.1567C1.05106 14.1709 0.533447 14.2273 0.533447 14.2697C0.533447 14.411 2.24018 15.2019 3.23344 15.5126C6.21322 16.4306 9.75259 16.0351 12.4106 14.4674C14.2992 13.3517 16.1878 11.1343 17.0691 8.98758C17.5448 7.84359 18.0204 5.75333 18.0204 4.75057C18.0204 4.10089 18.0624 4.01615 18.8458 3.23937C19.3075 2.78742 19.7411 2.2931 19.8251 2.15187C19.965 1.88352 19.951 1.88352 19.2375 2.12362C18.0484 2.54732 17.8805 2.49083 18.4681 1.85528C18.9018 1.40333 19.4194 0.584174 19.4194 0.344077C19.4194 0.301707 19.2095 0.372324 18.9717 0.499434C18.7199 0.640668 18.1603 0.852518 17.7406 0.979629L16.9852 1.21973L16.2997 0.753655C15.922 0.499434 15.3904 0.216967 15.1106 0.132227C14.3971 -0.0655006 13.3059 -0.0372539 12.6624 0.18872C10.9137 0.824272 9.80854 2.46258 9.93445 4.25625Z" fill="white"/>
+                                    </svg></a>
+                                <a href="#">
+                                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.96429 16V7.99906H7.1729L7.46558 5.2419H4.96429L4.96804 3.86191C4.96804 3.1428 5.03636 2.75748 6.06922 2.75748H7.44995V0H5.24103C2.58776 0 1.65388 1.33752 1.65388 3.58682V5.24221H0V7.99938H1.65388V16H4.96429Z" fill="white"/>
+                                        </svg>
+                                </a>
+                            </div>
+                            <div class="mt-4">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31705.78861125403!2d3.359370068271031!3d6.619123893656773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93a899b7c9b7%3A0x8630de71dbc44ffd!2sMagodo%20GRA%20Phase%20II%2C%20Ikosi%20Ketu%2C%20Lagos!5e0!3m2!1sen!2sng!4v1621776622583!5m2!1sen!2sng" width="100%" height="150" style="border:0; border-radius: 4px;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+ 
+         </div>
+     </section>
+
+     <!--footer --->
+     <section>
+     <section class="social-icon">
+       <!-- <a href="#"><svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7957 2.49845C21.5397 1.51497 20.7853 0.740516 19.8275 0.477677C18.0916 0 11.1304 0 11.1304 0C11.1304 0 4.16923 0 2.43327 0.477677C1.47542 0.740516 0.721075 1.51497 0.465075 2.49845C0 4.2809 0 8 0 8C0 8 0 11.719 0.465075 13.5015C0.721075 14.485 1.47542 15.2595 2.43327 15.5225C4.16923 16 11.1304 16 11.1304 16C11.1304 16 18.0916 16 19.8275 15.5225C20.7853 15.2595 21.5397 14.485 21.7957 13.5015C22.2609 11.719 22.2609 8 22.2609 8C22.2609 8 22.2609 4.2809 21.7957 2.49845Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0437 11.8262V4.86963L14.6089 8.34802L9.0437 11.8262Z" fill="#533E2D"/>
+            </svg></a>
+        <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00067 0C5.828 0 5.55533 0.0095 4.702 0.0483333C3.85033 0.0873333 3.269 0.222167 2.76033 0.42C2.23417 0.624333 1.78783 0.897667 1.34317 1.3425C0.898167 1.78717 0.624833 2.2335 0.419833 2.7595C0.2215 3.26833 0.0865 3.84983 0.0481667 4.70117C0.01 5.5545 0 5.82733 0 8C0 10.1727 0.00966667 10.4445 0.0483333 11.2978C0.0875 12.1495 0.222333 12.7308 0.42 13.2395C0.6245 13.7657 0.897833 14.212 1.34267 14.6567C1.78717 15.1017 2.2335 15.3757 2.75933 15.58C3.26833 15.7778 3.84983 15.9127 4.70133 15.9517C5.55467 15.9905 5.82717 16 7.99967 16C10.1725 16 10.4443 15.9905 11.2977 15.9517C12.1493 15.9127 12.7313 15.7778 13.2403 15.58C13.7663 15.3757 14.212 15.1017 14.6565 14.6567C15.1015 14.212 15.3748 13.7657 15.5798 13.2397C15.7765 12.7308 15.9115 12.1493 15.9515 11.298C15.9898 10.4447 15.9998 10.1727 15.9998 8C15.9998 5.82733 15.9898 5.55467 15.9515 4.70133C15.9115 3.84967 15.7765 3.26833 15.5798 2.75967C15.3748 2.2335 15.1015 1.78717 14.6565 1.3425C14.2115 0.8975 13.7665 0.624167 13.2398 0.42C12.7298 0.222167 12.1482 0.0873333 11.2965 0.0483333C10.4432 0.0095 10.1715 0 7.99817 0H8.00067ZM7.28317 1.44145C7.49617 1.44112 7.73384 1.44145 8.00084 1.44145C10.1368 1.44145 10.39 1.44912 11.2335 1.48745C12.0135 1.52312 12.4368 1.65345 12.7188 1.76295C13.0922 1.90795 13.3583 2.08129 13.6382 2.36129C13.9182 2.64129 14.0915 2.90795 14.2368 3.28129C14.3463 3.56295 14.4768 3.98629 14.5123 4.76629C14.5507 5.60962 14.559 5.86295 14.559 7.99795C14.559 10.133 14.5507 10.3863 14.5123 11.2296C14.4767 12.0096 14.3463 12.433 14.2368 12.7146C14.0918 13.088 13.9182 13.3538 13.6382 13.6336C13.3582 13.9136 13.0923 14.087 12.7188 14.232C12.4372 14.342 12.0135 14.472 11.2335 14.5076C10.3902 14.546 10.1368 14.5543 8.00084 14.5543C5.86467 14.5543 5.6115 14.546 4.76817 14.5076C3.98817 14.4716 3.56484 14.3413 3.28267 14.2318C2.90934 14.0868 2.64267 13.9135 2.36267 13.6335C2.08267 13.3535 1.90934 13.0875 1.764 12.714C1.6545 12.4323 1.524 12.009 1.4885 11.229C1.45017 10.3856 1.4425 10.1323 1.4425 7.99595C1.4425 5.85962 1.45017 5.60762 1.4885 4.76429C1.52417 3.98429 1.6545 3.56095 1.764 3.27895C1.909 2.90562 2.08267 2.63895 2.36267 2.35895C2.64267 2.07895 2.90934 1.90562 3.28267 1.76029C3.56467 1.65029 3.98817 1.52029 4.76817 1.48445C5.50617 1.45112 5.79217 1.44112 7.28317 1.43945V1.44145ZM12.2713 2.76986C11.7413 2.76986 11.3113 3.19936 11.3113 3.72953C11.3113 4.25953 11.7413 4.68953 12.2713 4.68953C12.8013 4.68953 13.2313 4.25953 13.2313 3.72953C13.2313 3.19953 12.8013 2.76953 12.2713 2.76953V2.76986ZM8.00079 3.8916C5.73196 3.8916 3.89246 5.7311 3.89246 7.99994C3.89246 10.2688 5.73196 12.1074 8.00079 12.1074C10.2696 12.1074 12.1085 10.2688 12.1085 7.99994C12.1085 5.7311 10.2695 3.8916 8.00062 3.8916H8.00079ZM8.00065 5.33301C9.47332 5.33301 10.6673 6.52684 10.6673 7.99967C10.6673 9.47234 9.47332 10.6663 8.00065 10.6663C6.52782 10.6663 5.33398 9.47234 5.33398 7.99967C5.33398 6.52684 6.52782 5.33301 8.00065 5.33301Z" fill="white"/>
+            </svg></a>
+        <a href="#"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.93445 4.25625L9.97642 4.9483L9.27694 4.86356C6.73083 4.53872 4.50649 3.4371 2.6179 1.58693L1.69458 0.668915L1.45676 1.34684C0.953135 2.85804 1.2749 4.45398 2.32411 5.52735C2.8837 6.12054 2.75779 6.20528 1.79251 5.85219C1.45676 5.7392 1.16298 5.65446 1.135 5.69683C1.03707 5.7957 1.37282 7.08092 1.63862 7.58937C2.00235 8.29553 2.7438 8.98758 3.5552 9.39716L4.24069 9.72199L3.42929 9.73612C2.64587 9.73612 2.6179 9.75024 2.70183 10.0468C2.98163 10.9649 4.0868 11.9394 5.31789 12.3631L6.18524 12.6597L5.4298 13.1116C4.31064 13.7613 2.99561 14.1285 1.68059 14.1567C1.05106 14.1709 0.533447 14.2273 0.533447 14.2697C0.533447 14.411 2.24018 15.2019 3.23344 15.5126C6.21322 16.4306 9.75259 16.0351 12.4106 14.4674C14.2992 13.3517 16.1878 11.1343 17.0691 8.98758C17.5448 7.84359 18.0204 5.75333 18.0204 4.75057C18.0204 4.10089 18.0624 4.01615 18.8458 3.23937C19.3075 2.78742 19.7411 2.2931 19.8251 2.15187C19.965 1.88352 19.951 1.88352 19.2375 2.12362C18.0484 2.54732 17.8805 2.49083 18.4681 1.85528C18.9018 1.40333 19.4194 0.584174 19.4194 0.344077C19.4194 0.301707 19.2095 0.372324 18.9717 0.499434C18.7199 0.640668 18.1603 0.852518 17.7406 0.979629L16.9852 1.21973L16.2997 0.753655C15.922 0.499434 15.3904 0.216967 15.1106 0.132227C14.3971 -0.0655006 13.3059 -0.0372539 12.6624 0.18872C10.9137 0.824272 9.80854 2.46258 9.93445 4.25625Z" fill="white"/>
+            </svg></a>
+        <a href="#">
+            <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.96429 16V7.99906H7.1729L7.46558 5.2419H4.96429L4.96804 3.86191C4.96804 3.1428 5.03636 2.75748 6.06922 2.75748H7.44995V0H5.24103C2.58776 0 1.65388 1.33752 1.65388 3.58682V5.24221H0V7.99938H1.65388V16H4.96429Z" fill="white"/>
+                </svg>
+        </a>-->
+        <div>
+          <p>&copy 2021 FilmByDT </p>
+        </div>
+     </section>
+     </section>
+
+
+
+
+ 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  
+     <script src='js/main.js'></script>
+
+</body>
+</html>
+
