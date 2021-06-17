@@ -6,26 +6,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   
    <link rel="stylesheet" href="css/style.css">
+   
 </head>
-<body class="body-bg">
-    <!-- Loader 1 -->
-  <div class="loader">
-    <div class="loader-container animate__animated animate__pulse animate__repeat-3 animate__delay-1s ">
-		<img src="assets/images/logo.png" alt="technical magic logo"> 
-			<span style="    vertical-align: middle;">Film By DT</span>
-		</div>
-  </div>
-    <!-- Loader 1 -->
+<body class="body-bg" style="overflow-y: hidden;">
+
     
      <!-- Video Source -->
+     <div data-scroll-container  style="overflow-y: hidden;">
+      <div data-scroll-section>
   <div class="hidden-lg">
     <div class="mobile-nav closed" id="mobile-nav">
       <a href="#" class="new-logo">
@@ -39,11 +35,11 @@
       </div>
   </div>
 
-  <section class="showcase">
+  <section class="showcase" >
    
     <div class="overlay"></div>
-    <div class="header-text animate__animated animate__fadeIn animate__delay-3s animate__slow main-logo">
-      <img src="assets/images/logo-white.png" class="img-responsive" />
+    <div class="header-text animate__animated animate__fadeIn animate__delay-1s animate__slow main-logo">
+      <img src="assets/images/logo-white.png" class="img-responsive" id="header" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true" />
       
     </div>
     <div class="scroll-button">
@@ -55,27 +51,36 @@
 
 
   <!-- about section -->
-  <section id="about" class="about-container customise-container" >
+  <section id="about" class="about-container customise-container scroll-anime" >
     <div class="about-content-wrap">
       <div class="about-left-content ">
-         <h3> About FilmByDt</h3>
-         <h2> We are a Creative video  production company</h2>
+        <!-- <h3> WE ARE filmbyDT</h3>--> 
+         <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true">  We are here to help your brand tell the right stories using the best visual techniques.</h2>
         
       </div>
-      <div class="about-right-content">
-        <p> Video production work with producing video content. 
-          It is the analogical of film making, but the images are digitally recorded 
-          instead of film stock. There are three levels of video production: 
-          production, pre-production and post-production the images are digitally 
-          recorded instead of film stock producing video content. Lorem ipsum dolor sit, amet 
-          consectetur adipisicing elit. Delectus quasi voluptatum reiciendis 
-          voluptatem placeat commodi accusantium neque repellat laborum iste 
-          pariatur et, sequi illo quae soluta illum. Harum, commodi nemo! 
-          Lorem ipsum dolor sit, amet 
-          consectetur adipisicing elit. Delectus quasi voluptatum reiciendis 
-          voluptatem placeat commodi accusantium neque repellat laborum iste 
-          pariatur et, sequi illo quae soluta illum. Harum, commodi nemo!
+      <div >
+        <p class="about-right-content disappear"  data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="1"> Established in [insert year] and in Lagos, the core of our values 
+          at filmbyDT is excellence. We are a visuals production company with 
+          solutions to the documentary, commercials and social media content 
+          problems of local and multinational agencies within and beyond 
+          sub-saharan Africa.<span id="dots">...</span>
         </p>
+        <div id="more">
+          We have documentary credits with top firms across various industries
+          including Guinness Nigeria, invest Bamboo, Guarantee Trust Bank, 
+          Sterling Bank, Nigerian Bottling Company, Origin Nigeria, Octa FX,
+           Total amongst a host of others. These numbers are nothing compared 
+           to how many commercials we have produced; including a short film.
+            <br>
+           We are here to help you with the following services from ideation to reality:
+          <ul>
+            <li> Documentary/Short Films </li>
+            <li> Commercials</li>
+            <li> Music Videos</li>
+          </ul>
+          </div>
+          <p onclick="myFunction()" id="myBtn">Read more </p>
+          
       </div>
      
       
@@ -116,37 +121,12 @@
    </a>
    <h4 class="dt-text"> Video By DT <br> For FilmByDT</h4>
   </section>--->
- <!-- work process section -->
-  <section class="customise-container">
-    <div class="pre-heading">
-      <h3 class="section-heading"> Work Process</h3>
-      <h2 class="section-sub-heading"> Ideas. innovate. <br>Execute.</h2>
-      <p class="section-sentence"></p>
-    </div>
-    <div class="work-process-container">
-      <div class="work-process-wrapper">
 
-        <div class="production"> 
-          <h2> 1</h2>
-          <p> Pre-production</p>
-        </div>
-        <div class="production"> 
-           <h2> 2</h2>
-          <p> Production</p>
-        </div>
-        <div class="production">
-         <h2> 3</h2>
-          <p> post-production</p> 
-        </div>
-        
-      </div>
-    </div>
-  </section>
   <!--porfolio section -->
-  <section class="customise-container porfolio" style="padding-top: 0px;">
-     <div class="pre-heading">
+  <section class="customise-container porfolio scroll-anime"  >
+     <div class="pre-heading" data-scroll data-scroll-direction="vertical" data-scroll-speed="4" data-scroll-class="appear" >
       <h3 class="section-heading"> Portfolio</h3>
-      <h2 class="section-sub-heading"> Range of Recent <br> Works</h2>
+      <h2 class="section-sub-heading"> WE ADD  MAGIC TO<br> YOUR STORIES</h2>
       <p class="section-sentence"></p>
     </div>
     <br></br>
@@ -159,7 +139,7 @@
 <!-- Photo Grid -->
 <div class="photo-row"> 
 
-  <div class="testing">
+  <div class="testing use-1 disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
     <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -170,7 +150,7 @@
   </div>
   
   
-  <div class="testing">
+  <div class="testing use-2 disappear" data-scroll-delay="0.5" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -180,7 +160,7 @@
     </div>
   </div>
 
-  <div class="testing">
+  <div class="testing use-3 disappear" data-scroll-delay="0.8" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -193,7 +173,7 @@
 </div>
 <div class="photo-row top-spacing"> 
 
-  <div class="testing">
+  <div class="testing" >
     <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -204,7 +184,7 @@
   </div>
   
   
-  <div class="testing">
+  <div class="testing" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -214,7 +194,7 @@
     </div>
   </div>
 
-  <div class="testing">
+  <div class="testing" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -227,7 +207,7 @@
 </div>
 <div class="photo-row top-spacing"> 
 
-  <div class="testing">
+  <div class="testing" >
     <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -238,7 +218,7 @@
   </div>
   
   
-  <div class="testing">
+  <div class="testing" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -248,7 +228,7 @@
     </div>
   </div>
 
-  <div class="testing">
+  <div class="testing" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -261,6 +241,44 @@
 </div>
 
     
+  </section>
+
+
+   <!-- work process section -->
+  <section class="customise-container work-process">
+    <div class="pre-heading">
+      <h3 class="section-heading"> work-process</h3>
+      <h2 class="section-sub-heading"> Idea. Innovate. Execute.</h2>
+      <p class="section-sentence"></p>
+    </div>
+    <!--<div class="pre-heading">
+      <h3 class="section-heading"> Work Process</h3>  
+      
+    </div>
+    <div class="work-heading">
+      <div><h2>Ideas.</h2> </div>
+      <div> <h2>innovate.</h2> </div>
+      <div> <h2>Execute.</h2> </div>
+    </div>
+    <h2 class="section-sub-heading">   </h2>-->
+    <div class="work-process-container">
+      <div class="work-process-wrapper">
+
+        <div class="production one " id="one"  > 
+          <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true"> 1</h2>
+          <p class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true"> Pre-production</p>
+        </div>
+        <div class="production two "  > 
+           <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> 2</h2>
+          <p class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> Production</p>
+        </div>
+        <div class="production three">
+         <h2  class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> 3</h2>
+          <p  class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> post-production</p> 
+        </div>
+        
+      </div>
+    </div>
   </section>
 
 <!-- client section -->
@@ -293,12 +311,14 @@ Our favorite brands are our friends! We help them to achieve their goals, they h
      <section class="fluid-container" id="contact">
          <div class="customise-container" style="padding-top: 0px;">
              <div class="row ">
-               <div class=" contact-container">
-               <div class="text-center mt-3"> <h6>Get In Touch</h6></div>
+               <div class=" contact-container" >
+               <div class="text-center mt-3"> <h6 >Reach Us</h6>
+                <p class="mt-3  white">We want you to get involved. For us to shoot your work, shoot us an email, or place a call </p>
+              </div>
                 
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-md-6 contact-input">
-                        <p class="mt-5 mb-4 white">Leave us a message</p>
+                        
                      <input  type="text" placeholder="Name"/> <br>
                      <input  type="text" placeholder="Email Address"/><br>
                      <textarea placeholder="Your Message"></textarea>
@@ -351,40 +371,78 @@ Our favorite brands are our friends! We help them to achieve their goals, they h
      <!--footer --->
      <section>
      <section class="social-icon">
-       <!-- <a href="#"><svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7957 2.49845C21.5397 1.51497 20.7853 0.740516 19.8275 0.477677C18.0916 0 11.1304 0 11.1304 0C11.1304 0 4.16923 0 2.43327 0.477677C1.47542 0.740516 0.721075 1.51497 0.465075 2.49845C0 4.2809 0 8 0 8C0 8 0 11.719 0.465075 13.5015C0.721075 14.485 1.47542 15.2595 2.43327 15.5225C4.16923 16 11.1304 16 11.1304 16C11.1304 16 18.0916 16 19.8275 15.5225C20.7853 15.2595 21.5397 14.485 21.7957 13.5015C22.2609 11.719 22.2609 8 22.2609 8C22.2609 8 22.2609 4.2809 21.7957 2.49845Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0437 11.8262V4.86963L14.6089 8.34802L9.0437 11.8262Z" fill="#533E2D"/>
-            </svg></a>
-        <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00067 0C5.828 0 5.55533 0.0095 4.702 0.0483333C3.85033 0.0873333 3.269 0.222167 2.76033 0.42C2.23417 0.624333 1.78783 0.897667 1.34317 1.3425C0.898167 1.78717 0.624833 2.2335 0.419833 2.7595C0.2215 3.26833 0.0865 3.84983 0.0481667 4.70117C0.01 5.5545 0 5.82733 0 8C0 10.1727 0.00966667 10.4445 0.0483333 11.2978C0.0875 12.1495 0.222333 12.7308 0.42 13.2395C0.6245 13.7657 0.897833 14.212 1.34267 14.6567C1.78717 15.1017 2.2335 15.3757 2.75933 15.58C3.26833 15.7778 3.84983 15.9127 4.70133 15.9517C5.55467 15.9905 5.82717 16 7.99967 16C10.1725 16 10.4443 15.9905 11.2977 15.9517C12.1493 15.9127 12.7313 15.7778 13.2403 15.58C13.7663 15.3757 14.212 15.1017 14.6565 14.6567C15.1015 14.212 15.3748 13.7657 15.5798 13.2397C15.7765 12.7308 15.9115 12.1493 15.9515 11.298C15.9898 10.4447 15.9998 10.1727 15.9998 8C15.9998 5.82733 15.9898 5.55467 15.9515 4.70133C15.9115 3.84967 15.7765 3.26833 15.5798 2.75967C15.3748 2.2335 15.1015 1.78717 14.6565 1.3425C14.2115 0.8975 13.7665 0.624167 13.2398 0.42C12.7298 0.222167 12.1482 0.0873333 11.2965 0.0483333C10.4432 0.0095 10.1715 0 7.99817 0H8.00067ZM7.28317 1.44145C7.49617 1.44112 7.73384 1.44145 8.00084 1.44145C10.1368 1.44145 10.39 1.44912 11.2335 1.48745C12.0135 1.52312 12.4368 1.65345 12.7188 1.76295C13.0922 1.90795 13.3583 2.08129 13.6382 2.36129C13.9182 2.64129 14.0915 2.90795 14.2368 3.28129C14.3463 3.56295 14.4768 3.98629 14.5123 4.76629C14.5507 5.60962 14.559 5.86295 14.559 7.99795C14.559 10.133 14.5507 10.3863 14.5123 11.2296C14.4767 12.0096 14.3463 12.433 14.2368 12.7146C14.0918 13.088 13.9182 13.3538 13.6382 13.6336C13.3582 13.9136 13.0923 14.087 12.7188 14.232C12.4372 14.342 12.0135 14.472 11.2335 14.5076C10.3902 14.546 10.1368 14.5543 8.00084 14.5543C5.86467 14.5543 5.6115 14.546 4.76817 14.5076C3.98817 14.4716 3.56484 14.3413 3.28267 14.2318C2.90934 14.0868 2.64267 13.9135 2.36267 13.6335C2.08267 13.3535 1.90934 13.0875 1.764 12.714C1.6545 12.4323 1.524 12.009 1.4885 11.229C1.45017 10.3856 1.4425 10.1323 1.4425 7.99595C1.4425 5.85962 1.45017 5.60762 1.4885 4.76429C1.52417 3.98429 1.6545 3.56095 1.764 3.27895C1.909 2.90562 2.08267 2.63895 2.36267 2.35895C2.64267 2.07895 2.90934 1.90562 3.28267 1.76029C3.56467 1.65029 3.98817 1.52029 4.76817 1.48445C5.50617 1.45112 5.79217 1.44112 7.28317 1.43945V1.44145ZM12.2713 2.76986C11.7413 2.76986 11.3113 3.19936 11.3113 3.72953C11.3113 4.25953 11.7413 4.68953 12.2713 4.68953C12.8013 4.68953 13.2313 4.25953 13.2313 3.72953C13.2313 3.19953 12.8013 2.76953 12.2713 2.76953V2.76986ZM8.00079 3.8916C5.73196 3.8916 3.89246 5.7311 3.89246 7.99994C3.89246 10.2688 5.73196 12.1074 8.00079 12.1074C10.2696 12.1074 12.1085 10.2688 12.1085 7.99994C12.1085 5.7311 10.2695 3.8916 8.00062 3.8916H8.00079ZM8.00065 5.33301C9.47332 5.33301 10.6673 6.52684 10.6673 7.99967C10.6673 9.47234 9.47332 10.6663 8.00065 10.6663C6.52782 10.6663 5.33398 9.47234 5.33398 7.99967C5.33398 6.52684 6.52782 5.33301 8.00065 5.33301Z" fill="white"/>
-            </svg></a>
-        <a href="#"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.93445 4.25625L9.97642 4.9483L9.27694 4.86356C6.73083 4.53872 4.50649 3.4371 2.6179 1.58693L1.69458 0.668915L1.45676 1.34684C0.953135 2.85804 1.2749 4.45398 2.32411 5.52735C2.8837 6.12054 2.75779 6.20528 1.79251 5.85219C1.45676 5.7392 1.16298 5.65446 1.135 5.69683C1.03707 5.7957 1.37282 7.08092 1.63862 7.58937C2.00235 8.29553 2.7438 8.98758 3.5552 9.39716L4.24069 9.72199L3.42929 9.73612C2.64587 9.73612 2.6179 9.75024 2.70183 10.0468C2.98163 10.9649 4.0868 11.9394 5.31789 12.3631L6.18524 12.6597L5.4298 13.1116C4.31064 13.7613 2.99561 14.1285 1.68059 14.1567C1.05106 14.1709 0.533447 14.2273 0.533447 14.2697C0.533447 14.411 2.24018 15.2019 3.23344 15.5126C6.21322 16.4306 9.75259 16.0351 12.4106 14.4674C14.2992 13.3517 16.1878 11.1343 17.0691 8.98758C17.5448 7.84359 18.0204 5.75333 18.0204 4.75057C18.0204 4.10089 18.0624 4.01615 18.8458 3.23937C19.3075 2.78742 19.7411 2.2931 19.8251 2.15187C19.965 1.88352 19.951 1.88352 19.2375 2.12362C18.0484 2.54732 17.8805 2.49083 18.4681 1.85528C18.9018 1.40333 19.4194 0.584174 19.4194 0.344077C19.4194 0.301707 19.2095 0.372324 18.9717 0.499434C18.7199 0.640668 18.1603 0.852518 17.7406 0.979629L16.9852 1.21973L16.2997 0.753655C15.922 0.499434 15.3904 0.216967 15.1106 0.132227C14.3971 -0.0655006 13.3059 -0.0372539 12.6624 0.18872C10.9137 0.824272 9.80854 2.46258 9.93445 4.25625Z" fill="white"/>
-            </svg></a>
-        <a href="#">
-            <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.96429 16V7.99906H7.1729L7.46558 5.2419H4.96429L4.96804 3.86191C4.96804 3.1428 5.03636 2.75748 6.06922 2.75748H7.44995V0H5.24103C2.58776 0 1.65388 1.33752 1.65388 3.58682V5.24221H0V7.99938H1.65388V16H4.96429Z" fill="white"/>
-                </svg>
-        </a>-->
+ 
         <div>
           <p>&copy 2021 FilmByDT </p>
         </div>
      </section>
      </section>
 
+    
 
 
-
- 
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-  
-     <script src='js/main.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/EasePack.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
+     <script src='js/main.js'></script>
+     <script>
+
+       // Part 1
+       /* gsap.to('.img-responsive', { autoAlpha: 0, 
+            scrollTrigger: {
+              id: 'header',
+              trigger: '.showcase',
+              start: 'top top+=5',
+              end: '+=200',
+              scrub: true,
+              // markers: true
+            } 
+        });
+       let tl = gsap.timeline({
+         scrollTrigger: {
+           trigger: ".scroll-anime",
+           start: "center bottom",
+         }
+       });
+       tl.from(".about-left-content", {y:200, opacity:0, duration:1})
+         .from(".about-right-content", {y:200, opacity:0, duration:1}, "-=0.5")
+
+       let tll = gsap.timeline({
+         scrollTrigger: {
+           trigger: ".portfolio",
+           
+         }
+       });
+       tll.from(".use-1", {y:200, opacity:0, duration:1})
+          .from(".use-2", {y:200, opacity:0, duration:1}, "-=0.5")
+         
+         
+
+       /*let tll = gsap.timeline({
+         scrollTrigger: {
+           trigger: ".work-process",
+           start: "center bottom",
+         }
+       });
+       tll.from(".section-heading", { opacity:0, duration:1,  ease: "slow(0.7,0.7,false)"})
+          .from(".section-sub-heading", { opacity:0, duration:1,ease: "Power0.easeNone"}, "-=0.5")
+          .from(".one", {y:200, opacity:0, duration:0.5, ease: "none"})
+          .from(".two", {y:200, opacity:0,ease: "none", duration:0.5}, "-=0.3")
+          .from(".three", {y:200, opacity:0,ease: "none", duration:0.5}, "-=0.3")*/
+     </script>
+     </div>
+    </div>
 </body>
 </html>
 
