@@ -9,19 +9,21 @@
     
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   
    <link rel="stylesheet" href="css/style.css">
    
 </head>
-<body class="body-bg" style="overflow-y: hidden;">
+<body class="body-bg" >
 
     
      <!-- Video Source -->
-     <div data-scroll-container  style="overflow-y: hidden;">
-      <div data-scroll-section>
+     <div >
+      <div >
   <div class="hidden-lg">
     <div class="mobile-nav closed" id="mobile-nav">
       <a href="#" class="new-logo">
@@ -38,8 +40,8 @@
   <section class="showcase" >
    
     <div class="overlay"></div>
-    <div class="header-text animate__animated animate__fadeIn animate__delay-1s animate__slow main-logo">
-      <img src="assets/images/logo-white.png" class="img-responsive" id="header" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true" />
+    <div class="header-text animate__animated animate__backInDown animate__delay-1s animate__slow main-logo">
+      <img src="assets/images/logo-white.png" class="img-responsive" id="header"  />
       
     </div>
     <div class="scroll-button">
@@ -53,25 +55,29 @@
   <!-- about section -->
   <section id="about" class="about-container customise-container scroll-anime" >
     <div class="about-content-wrap">
-      <div class="about-left-content ">
+      <div class="about-left-content " data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"  data-aos-duration="500">
         <!-- <h3> WE ARE filmbyDT</h3>--> 
-         <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true">  We are here to help your brand tell the right stories using the best visual techniques.</h2>
+         <h2>  We are here to help your brand tell the right stories using the best visual techniques.</h2>
         
       </div>
-      <div >
-        <p class="about-right-content disappear"  data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="1"> Established in [insert year] and in Lagos, the core of our values 
+      <div  data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="80"  data-aos-duration="500">
+        <p class="about-right-content" > Established in [insert year] and in Lagos, the core of our values 
           at filmbyDT is excellence. We are a visuals production company with 
           solutions to the documentary, commercials and social media content 
           problems of local and multinational agencies within and beyond 
           sub-saharan Africa.<span id="dots">...</span>
         </p>
-        <div id="more">
+        <div id="more" style=" width:70%;" >
           We have documentary credits with top firms across various industries
           including Guinness Nigeria, invest Bamboo, Guarantee Trust Bank, 
           Sterling Bank, Nigerian Bottling Company, Origin Nigeria, Octa FX,
            Total amongst a host of others. These numbers are nothing compared 
            to how many commercials we have produced; including a short film.
-            <br>
+            <br> <br>
            We are here to help you with the following services from ideation to reality:
           <ul>
             <li> Documentary/Short Films </li>
@@ -124,22 +130,98 @@
 
   <!--porfolio section -->
   <section class="customise-container porfolio scroll-anime"  >
-     <div class="pre-heading" data-scroll data-scroll-direction="vertical" data-scroll-speed="4" data-scroll-class="appear" >
+     <div class="pre-heading" data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-delay="50"  data-aos-duration="500" >
       <h3 class="section-heading"> Portfolio</h3>
-      <h2 class="section-sub-heading"> WE ADD  MAGIC TO<br> YOUR STORIES</h2>
+      <h2 class="section-sub-heading"> We add  magic to your  stories</h2>
       <p class="section-sentence"></p>
     </div>
     <br></br>
-    <!-- Header -->
-<!--<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>-->
 
-<!-- Photo Grid -->
+    <div class="container-portfolio">
+      <div class="description panel blue">
+       <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt1.jpg" /></a>
+       <div class="overlay"> </div>
+       
+        <div class="pic-word">
+          <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+            <span></span>
+           </a>
+           <br><br><br>
+          <h1 style="margin-top: 100px; font-size: 40px;">Guiness Smooth Ad</h1>
+        </div>
+      </div>
+    
+    
+      <section class="panel red">
+        <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt6.jpg" /></a>
+        <div class="overlay"> </div>
+        
+         <div class="pic-word">
+           <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+             <span></span>
+            </a>
+            <br><br><br>
+           <h1 style="margin-top: 140px; font-size: 50px;">Guiness Smooth Ad</h1>
+         </div>
+       
+      </section>
+      <section class="panel orange">
+        <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt3.jpg" /></a>
+        <div class="overlay"> </div>
+        
+         <div class="pic-word">
+           <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+             <span></span>
+            </a>
+            <br><br><br>
+           <h1 style="margin-top: 140px; font-size: 50px;">Guiness Smooth Ad</h1>
+         </div>
+      </section>
+      <section class="panel purple">
+        <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt4.jpg" /></a>
+        <div class="overlay"> </div>
+        
+         <div class="pic-word">
+           <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+             <span></span>
+            </a>
+            <br><br><br>
+           <h1 style="margin-top: 140px; font-size: 50px;">Guiness Smooth Ad</h1>
+         </div>
+      </section>
+      <section class="panel green">
+        <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt5.jpg" /></a>
+        <div class="overlay"> </div>
+        
+         <div class="pic-word">
+           <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+             <span></span>
+            </a>
+            <br><br><br>
+           <h1 style="margin-top: 140px; font-size: 50px;">Guiness Smooth Ad</h1>
+         </div>
+      </section>
+      <section class="panel gray">
+        <a href="https://vimeo.com/447277747" target="_blank"> <img src="assets/images/pt1.jpg" /></a>
+        <div class="overlay"> </div>
+        
+         <div class="pic-word">
+           <a href="https://vimeo.com/447277747" target="_blank" id="play-video" class="video-play-button"  onclick="playPause()">
+             <span></span>
+            </a>
+            <br><br><br>
+           <h1 style="margin-top: 140px; font-size: 50px;">Guiness Smooth Ad</h1>
+         </div>
+      </section>
+    
+    </div>
+
+<!-- Photo Grid 
 <div class="photo-row"> 
 
-  <div class="testing use-1 disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
+  <div class="testing use-1 "  >
     <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -150,7 +232,7 @@
   </div>
   
   
-  <div class="testing use-2 disappear" data-scroll-delay="0.5" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
+  <div class="testing use-2 "   >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -160,7 +242,43 @@
     </div>
   </div>
 
-  <div class="testing use-3 disappear" data-scroll-delay="0.8" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
+  <div class="testing use-3 "   >
+    <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
+    <div class="overlay1">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link"target="_blank">Explore</a></div> 
+      </div>
+    </div>
+  </div>
+
+
+   
+</div>
+<div class="photo-row top-spacing"> 
+
+  <div class="testing use-4" >
+    <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
+    <div class="overlay1">
+      <div class="video-details">
+        <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link" target="_blank">Explore</a></div> 
+      </div> 
+    </div>
+  </div>
+  
+  
+  <div class="testing use-5" >
+    <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
+    <div class="overlay1">
+      <div class="video-details">
+      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
+        <div><a href= "https://vimeo.com/447277747" class="video-link" target="_blank">Explore</a></div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="testing use-6" >
     <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
     <div class="overlay1">
       <div class="video-details">
@@ -204,44 +322,14 @@
     </div>
   </div>
    
-</div>
-<div class="photo-row top-spacing"> 
-
-  <div class="testing" >
-    <img src=" assets/images/pt5.jpg" style="width:100%" class="work1">
-    <div class="overlay1">
-      <div class="video-details">
-        <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
-        <div><a href= "https://vimeo.com/447277747" class="video-link" target="_blank">Explore</a></div> 
-      </div> 
-    </div>
-  </div>
-  
-  
-  <div class="testing" >
-    <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
-    <div class="overlay1">
-      <div class="video-details">
-      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
-        <div><a href= "https://vimeo.com/447277747" class="video-link" target="_blank">Explore</a></div> 
-      </div>
-    </div>
-  </div>
-
-  <div class="testing" >
-    <img src="assets/images/pt5.jpg" style="width:100%" class="work1">
-    <div class="overlay1">
-      <div class="video-details">
-      <div><h2 class="video-heading">Guiness smooth Ad</h2></div>
-        <div><a href= "https://vimeo.com/447277747" class="video-link"target="_blank">Explore</a></div> 
-      </div>
-    </div>
-  </div>
-   
-</div>
+</div>-->
 
     
   </section>
+
+
+
+
 
 
    <!-- work process section -->
@@ -265,16 +353,16 @@
       <div class="work-process-wrapper">
 
         <div class="production one " id="one"  > 
-          <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true"> 1</h2>
-          <p class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true"> Pre-production</p>
+          <h2 class="" > 1</h2>
+          <p class="" > Pre-production</p>
         </div>
         <div class="production two "  > 
-           <h2 class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> 2</h2>
-          <p class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> Production</p>
+           <h2 class="" > 2</h2>
+          <p class="" > Production</p>
         </div>
         <div class="production three">
-         <h2  class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> 3</h2>
-          <p  class="disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" data-scroll-delay="5"> post-production</p> 
+         <h2  class="" > 3</h2>
+          <p  class="" > post-production</p> 
         </div>
         
       </div>
@@ -289,16 +377,19 @@
     </div>
     <div class="client-header-right">
       <h5>- We worked with</h5>
-      <p> 
+      <p style="margin-left:13px"> 
 
 Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
     </div>
   </div>
    <section class="customer-logos slider">
-      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <!--<div class="slide"><img src="https://res.cloudinary.com/loye/image/upload/c_scale,w_90/v1624217319/sterling-2_rp0v5o.png" ></div>
+      <div class="slide"><img src="https://res.cloudinary.com/loye/image/upload/c_scale,h_70/v1624217376/bamboo-2_aecjd2.png" ></div>
+      <div class="slide"><img src="https://res.cloudinary.com/loye/image/upload/c_scale,w_200/v1624217320/total-logo_mbuyzo.png"></div>
+      <div class="slide"><img src="https://res.cloudinary.com/loye/image/upload/c_scale,w_130/v1624217376/orijin_zrcswe.png"></div>-->
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
       <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
       <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
       <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
@@ -389,17 +480,18 @@ Our favorite brands are our friends! We help them to achieve their goals, they h
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/EasePack.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
      <script src='js/main.js'></script>
      <script>
-
+       AOS.init();
        // Part 1
-       /* gsap.to('.img-responsive', { autoAlpha: 0, 
+        gsap.to('.img-responsive', { autoAlpha: 0, 
             scrollTrigger: {
               id: 'header',
               trigger: '.showcase',
@@ -409,7 +501,31 @@ Our favorite brands are our friends! We help them to achieve their goals, they h
               // markers: true
             } 
         });
-       let tl = gsap.timeline({
+
+
+
+      // horizontal scroll
+      gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container-portfolio",
+    pin: true,
+    start: "center center",
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: () => "+=" + document.querySelector(".container-portfolio").offsetWidth
+  }
+});
+
+
+        
+      /* let tl = gsap.timeline({
          scrollTrigger: {
            trigger: ".scroll-anime",
            start: "center bottom",
@@ -440,6 +556,9 @@ Our favorite brands are our friends! We help them to achieve their goals, they h
           .from(".one", {y:200, opacity:0, duration:0.5, ease: "none"})
           .from(".two", {y:200, opacity:0,ease: "none", duration:0.5}, "-=0.3")
           .from(".three", {y:200, opacity:0,ease: "none", duration:0.5}, "-=0.3")*/
+       
+
+     
      </script>
      </div>
     </div>
