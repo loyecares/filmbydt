@@ -48,10 +48,6 @@ function toggle(){
 }
 
 
-const scroller = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
 
 
 function myFunction() {
@@ -66,6 +62,43 @@ function myFunction() {
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
+    moreText.style.display = "block";
   }
 }
+
+// viewportscroll
+ScrollReveal({ reset: true });
+//ScrollReveal().reveal('.about-left-content', { delay: 100 });
+//ScrollReveal().reveal('.about-right-content', { delay: 200 });
+ScrollReveal().reveal('.one', { delay: 400 });
+ScrollReveal().reveal('.two', { delay: 800 });
+ScrollReveal().reveal('.three', { delay: 1100 });
+ScrollReveal().reveal('.use-4', { delay: 300 });
+ScrollReveal().reveal('.use-5', { delay: 500 });
+ScrollReveal().reveal('.use-6', { delay: 700 });
+
+
+gsap.registerPlugin(ScrollTrigger);
+const images = gsap.utils.toArray('img');
+const loader = document.querySelector('.loader--text');
+const updateProgress = (instance) =>
+loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
+
+const showDemo = () => {
+  document.body.style.overflow = 'auto';
+  document.scrollingElement.scrollTo(0, 0);
+  gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+
+gsap.utils.toArray('section').forEach((section, index) => {
+  const w = section.querySelector('.wrapper');
+  const [x, xEnd] = index % 2 ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+  gsap.fromTo(w, { x }, {
+    x: xEnd,
+    scrollTrigger: {
+      trigger: section,
+      scrub: 0.5 } });
+
+
+});
+};
+
